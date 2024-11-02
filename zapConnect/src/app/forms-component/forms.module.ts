@@ -1,17 +1,18 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsComponent } from './forms.component';
-import { PoButtonModule, PoFieldModule, PoPageModule } from '@po-ui/ng-components';
+import { PoButtonGroupModule, PoButtonModule, PoFieldModule, PoPageModule } from '@po-ui/ng-components';
 
 @NgModule({
   declarations: [FormsComponent],
   imports: [
-    CommonModule, 
-    PoPageModule, 
+    CommonModule,
+    PoPageModule,
     PoFieldModule,
-    PoButtonModule
+    PoButtonModule,
+    PoButtonGroupModule
   ],
 
-  exports: [FormsComponent]  
+  exports: [FormsComponent]
 })
 export class FormsComponentModule { }
