@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { FormsComponent } from './forms-component/forms.component';
+import { FormsComponent } from './forms/forms.component';
+import { WallpaperComponent } from './wallpaper/wallpaper.component';
 
 const routes: Routes = [
   {
@@ -11,6 +12,10 @@ const routes: Routes = [
   {
     path: 'app-forms-component',
     component: FormsComponent,
+  },
+  {
+    path: 'app-wallpaper',
+    component: WallpaperComponent,
   },
 
 ];

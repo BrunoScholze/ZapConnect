@@ -7,7 +7,7 @@ import { PoModule, PoPageModule } from '@po-ui/ng-components';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
-import { FormsComponentModule } from './forms-component/forms.module';
+import { FormsComponentModule } from './forms/forms.module';
 
 @NgModule({
   declarations: [AppComponent],
