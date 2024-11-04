@@ -12,7 +12,7 @@
       <po-upload
         name="upload"
         [ngModel]="pessoa.imagem"
-        (ngModelChange)="pessoa.imagem = $event"
+        (ngModelChange)="changeInput($event)"
         p-label="Foto 3x4"
         [p-required-url]="false"
         [p-multiple]="false"
@@ -46,19 +46,20 @@
     <div class="po-row">
       <po-select
         name="IDD"
-        class="po-sm-3"
-        p-label="IDD"
+        class="po-sm-4"
+        p-label="Região"
         [ngModel]="pessoa.idd"
         (p-change)="onChangeIdd($event)"
         [p-options]="idd">
       </po-select>
 
-      <po-number
+      <po-input
         name="numero"
-        class="po-sm-9"
-        p-label="Número"
+        class="po-sm-8"
+        p-mask="(99) 99999-9999"
+        p-label="Número (Com código de área)"
         [(ngModel)]="number">
-      </po-number>
+      </po-input>
     </div>
 
     <po-input

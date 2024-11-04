@@ -1,12 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Pessoa } from '../model/pessoa';
 import { ActivatedRoute } from '@angular/router';
 import * as QRCode from 'qrcode';
 
 @Component({
   selector: 'app-wallpaper',
-  standalone: true,
-  imports: [],
   templateUrl: './wallpaper.component.html',
   styleUrl: './wallpaper.component.scss'
 })
@@ -22,11 +20,12 @@ export class WallpaperComponent {
     this.route.queryParams.subscribe(params => {
       if (params['pessoa']) {
         this.pessoa = JSON.parse(params['pessoa']);
-        console.log(this.pessoa)
+
       }
     });
 
     this.generateQrCode();
+
   }
 
   generateQrCode() {
@@ -35,5 +34,9 @@ export class WallpaperComponent {
       if (err) console.error(err);
       this.qrCodeDataUrl = url;
     });
+  }
+
+  getImageUrl() {
+    return URL.createObjectURL(this.pessoa.imagem[0].rawFile);
   }
 }

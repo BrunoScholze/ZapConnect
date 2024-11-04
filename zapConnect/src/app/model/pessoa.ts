@@ -5,8 +5,9 @@ export interface Pessoa {
   numero: string;
   cidade: string;
   pais: string;
-  imagem: object;
+  imagem: Array<any>;
   idd: string;
   whatsappLink: string;
+  imageUrl: string;
 }
 

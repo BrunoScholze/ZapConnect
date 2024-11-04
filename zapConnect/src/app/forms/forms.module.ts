@@ -3,9 +3,10 @@ import { CommonModule } from '@angular/common';
 import { FormsComponent } from './forms.component';
 import { PoButtonGroupModule, PoButtonModule, PoContainerModule, PoFieldModule, PoPageModule } from '@po-ui/ng-components';
 import { FormsModule } from '@angular/forms';
+import { WallpaperComponentModule } from '../wallpaper/wallpaper.module';
 
 @NgModule({
-  declarations: [FormsComponent, FormsComponent],
+  declarations: [FormsComponent],
   imports: [
     CommonModule,
     PoPageModule,
@@ -13,7 +14,9 @@ import { FormsModule } from '@angular/forms';
     PoButtonModule,
     PoButtonGroupModule,
     PoContainerModule,
-    FormsModule
+    FormsModule,
+    WallpaperComponentModule
+
   ],
 
   exports: [FormsComponent]

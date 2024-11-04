@@ -18,4 +18,4 @@ import { WallpaperComponent } from './wallpaper.component';
 
   exports: [WallpaperComponent]
 })
-export class FormsComponentModule { }
+export class WallpaperComponentModule { }
