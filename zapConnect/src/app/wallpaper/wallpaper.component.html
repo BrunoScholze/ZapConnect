@@ -1,9 +1,33 @@
-<p>wallpaper works!</p>
-<div>
-  <img [src]="qrCodeDataUrl" alt="QR Code for WhatsApp Link" />
+<po-page-default>
+  <div class="wallPaper flex-center">
 
-  <div *ngIf="pessoa.imagem && pessoa.imagem.length > 0 && pessoa.imagem[0].rawFile">
+    <div class="flex-center po-pt-big-top">
+      <div class="po-sm-10">
+        <div class="po-sm-3 po-p-0"><img class="image-3x4 po-p-0 po-sm-2 " src="https://raw.githubusercontent.com/BrunoScholze/ZapConnect/main/zapConnect/src/app/assets/img/teste.jpg" alt=""></div>
+        <div class="po-sm-9 po-p-0 text-left po-pl-1 po-pt-1"><span class="font-name" >{{pessoa.nome}} |</span> <span class="font-cargo" > {{pessoa.cargo}}</span></div>
+        <div class="po-sm-9 po-p-0 text-left po-pl-1"><span class="font-city" >{{pessoa.pais}}, {{pessoa.cidade}}</span></div>
+      </div>
+    </div>
+
+    <div class="po-pt-4">
+      <img class="qr-code" [src]="qrCodeDataUrl" alt="QR Code for WhatsApp Link" />
+    </div>
+
+    <footer class="footer">
+      <div class="po-row po-pt-big flex-center">
+        <img class="image-size" [src]="logoUrl" alt="Logo da Empresa" />
+      </div>
+    </footer>
+  </div>
+</po-page-default>
+
+
+
+
+
+
+  <!--div *ngIf="pessoa.imagem && pessoa.imagem.length > 0 && pessoa.imagem[0].rawFile">
     <h3>Imagem Preview:</h3>
     <img [src]="pessoa.imageUrl" alt="Preview da Imagem" style="max-width: 100%; height: auto;" />
-</div>
-</div>
+  </div-->
+

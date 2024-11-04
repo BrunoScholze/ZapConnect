@@ -6,7 +6,7 @@ import { WallpaperComponent } from './wallpaper/wallpaper.component';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'app-forms-component',
+    redirectTo: 'app-wallpaper',
     pathMatch: 'full',
   },
   {
