@@ -1,5 +1,5 @@
 <po-page-default>
-  <div class="wallPaper flex-center">
+  <div class="wallPaper flex-center " div id="capture">
 
     <div class="flex-center po-pt-big-top">
       <div class="po-sm-10">
@@ -12,6 +12,7 @@
     <div class="po-pt-4">
       <img class="qr-code" [src]="qrCodeDataUrl" alt="QR Code for WhatsApp Link" />
     </div>
+    <po-button p-label="salvar" (p-click)="captureAndDownloadImage()"></po-button>
 
     <footer class="footer">
       <div class="po-row po-pt-big flex-center">

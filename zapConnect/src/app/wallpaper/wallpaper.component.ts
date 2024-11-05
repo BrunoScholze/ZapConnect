@@ -2,6 +2,7 @@ import { Component, Input, ViewEncapsulation } from '@angular/core';
 import { Pessoa } from '../model/pessoa';
 import { ActivatedRoute } from '@angular/router';
 import * as QRCode from 'qrcode';
+import html2canvas from 'html2canvas';
 
 @Component({
   selector: 'app-wallpaper',
@@ -71,5 +72,33 @@ export class WallpaperComponent {
   genereateLogo(): void {
     const url = 'https://logo.clearbit.com/neogrid.com';
     this.logoUrl = url;
+  }
+
+  async captureAndDownloadImage() {
+    const element = document.getElementById('capture');
+
+    if (element) {
+      const canvas = await html2canvas(element, {
+        useCORS: true,
+        scrollX: 0,
+        scrollY: 0,
+      });
+
+      const blob = await new Promise<Blob | null>((resolve) => {
+        canvas.toBlob(resolve, 'image/png');
+      });
+
+      if (blob) {
+
+        const url = URL.createObjectURL(blob);
+        const link = document.createElement('a');
+        link.href = url;
+        link.download = `zapConnect_${new Date().getTime()}.png`;
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        URL.revokeObjectURL(url);
+      }
+    }
   }
 }
