@@ -11,11 +11,11 @@ import html2canvas from 'html2canvas';
   encapsulation: ViewEncapsulation.None,
 })
 export class WallpaperComponent {
- // pessoa!: Pessoa;
+  pessoa!: Pessoa;
   qrCodeDataUrl: string | undefined;
   logoUrl: string = '';
 
-  pessoa: Pessoa = {
+  /*pessoa: Pessoa = {
     nome: 'Bruno Scholze',
     empresa: 'Totvs',
     cargo: 'Analsita de desenvolvimento',
@@ -26,19 +26,19 @@ export class WallpaperComponent {
     idd: '55',
     whatsappLink: "https://wa.me/556789773585",
     imageUrl: "blob:http://localhost:4200/15d1c13e-9bb2-48eb-9ae3-088512c5f59b"
-  };
+  };*/
 
   constructor(private route: ActivatedRoute) {
 
    }
 
   ngOnInit() {
-  /*  this.route.queryParams.subscribe(params => {
+    this.route.queryParams.subscribe(params => {
       if (params['pessoa']) {
         this.pessoa = JSON.parse(params['pessoa']);
 
       }
-    });*/
+    });
     this.genereateLogo();
     this.generateQrCode();
 
@@ -51,8 +51,9 @@ export class WallpaperComponent {
       {
         width: 200,
         color: {
-          dark: "#000000", // Cor dos "pixels" (preto por padrão)
-
+          dark: "#000000", ///pRETO
+         // dark: "#ffffff", // branco
+          //light: "#00000000" // Fundo transparente (RGBA com alfa 0)
         }
       },
       (err, url) => {
