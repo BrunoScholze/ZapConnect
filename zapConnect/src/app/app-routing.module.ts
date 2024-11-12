@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { FormsComponent } from './forms/forms.component';
-import { WallpaperComponent } from './wallpaper/wallpaper.component';
+import { WallpaperComponent } from './assets/pages/wallpaper/wallpaper.component';
+import { FormsComponent } from './assets/pages/forms/forms.component';
+import { ThemeComponent } from './assets/pages/Theme/Theme.component';
 
 const routes: Routes = [
   {
@@ -16,6 +17,10 @@ const routes: Routes = [
   {
     path: 'app-wallpaper',
     component: WallpaperComponent,
+  },
+  {
+    path: 'app-theme-forms',
+    component: ThemeComponent,
   },
 
 ];

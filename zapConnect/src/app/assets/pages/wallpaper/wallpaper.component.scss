@@ -1,0 +1,234 @@
+/* Dentro de styles.scss ou wallpaper.component.scss */
+body > app-root > app-wallpaper > po-page-default > po-page > div > po-page-content > div {
+  padding: 0 !important;
+}
+
+.po-sm-3, .po-visible-sm-3{
+  width: 20%;
+}
+
+.wallPaper {
+  height: 100vh;
+  background-color: rgb(230, 230, 230);
+}
+
+.flex-center{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.po-pt-big-top{
+  padding-top: 80%;
+}
+
+.image-size {
+  width: 70px;
+  height: auto;
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+.image-3x4 {
+  width: 80px;
+  height: 80px;
+  max-width: 100%;
+  object-fit: cover;
+  display: block;
+  margin: 0 ;
+  border-radius: 5px;
+}
+
+.font-name{
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: rgb(0, 0, 0);
+}
+
+.font-city{
+  font-family: 'Poppins', sans-serif;
+  color: rgb(165, 165, 165);
+}
+
+.font-cargo{
+  font-family: 'Poppins', sans-serif;
+  color: rgb(0, 0, 0);
+}
+
+.text-left {
+  text-align: left;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 13px 0;
+}
+
+.image-size {
+  max-width: 40px;
+}
+
+.qr-code{
+  width: 250px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.flag-container{
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/*---Themes----*/
+
+/*---default----*/
+
+.flag-container-white-default{
+  background-color: white;
+}
+
+.footer-white-default{
+  background-color: white;
+}
+
+.flag-container-dark-default{
+  background-color: #292929;
+}
+
+.footer-dark-default{
+  background-color: #292929;
+}
+
+/*---Red----*/
+
+.flag-container-white-red{
+  background-color: white;
+  border: 1px solid #C70707;
+}
+
+.footer-white-red{
+  background-color: white;
+  border-top: 1px solid #C70707;
+}
+
+.flag-container-dark-red{
+  background-color: #292929;
+  border: 1px solid #C70707;
+}
+
+.footer-dark-red{
+  background-color: #292929;
+  border-top: 1px solid #C70707;
+}
+
+/*---Green----*/
+
+.flag-container-white-green{
+  background-color: white;
+  border: 1px solid #098502;
+}
+
+.footer-white-green{
+  background-color: white;
+  border-top: 1px solid #098502;
+}
+
+.flag-container-dark-green{
+  background-color: #292929;
+  border: 1px solid #098502;
+}
+
+.footer-dark-green{
+  background-color: #292929;
+  border-top: 1px solid #098502;
+}
+
+/*---Bluee----*/
+
+.flag-container-white-blue{
+  background-color: white;
+  border: 1px solid #008FDB;
+}
+
+.footer-white-blue{
+  background-color: white;
+  border-top: 1px solid #008FDB;
+}
+
+.flag-container-dark-blue{
+  background-color: #292929;
+  border: 1px solid #008FDB;
+}
+
+.footer-dark-blue{
+  background-color: #292929;
+  border-top: 1px solid #008FDB;
+}
+
+/*---Purple----*/
+
+.flag-container-white-purple{
+  background-color: white;
+  border: 1px solid #7A25A9;
+}
+
+.footer-white-purple{
+  background-color: white;
+  border-top: 1px solid #7A25A9;
+}
+
+.flag-container-dark-purple{
+  background-color: #292929;
+  border: 1px solid #7A25A9;
+}
+
+.footer-dark-purple{
+  background-color: #292929;
+  border-top: 1px solid #7A25A9;
+}
+
+/* ----Fonts------*/
+
+.color-white{
+  color: white;
+}
+
+.color-black{
+  color: rgb(0, 0, 0);
+}
+
+.color-grey{
+  color: #BBBBBB;
+}
+
+.color-red{
+  color: #DB3E3E;
+}
+
+.color-green{
+  color: #23B11B;
+}
+
+.color-blue{
+  color: #008FDB;
+}
+
+.color-purple{
+  color: #9B30D6;
+}
+
+.color-light-grey{
+  color: #A6A6A6;
+}
+
+
+
+
+
+

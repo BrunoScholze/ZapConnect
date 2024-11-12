@@ -1,0 +1,50 @@
+<po-page-default>
+  <div class="po-row">
+    <span class="titleFont po-sm-12 po-pt-1">Selecione seu tema favorito</span>
+    <span class="spanFont po-sm-12 po-pt-1">Escolha o tema que mais combina com você e destaque suas informações de forma única.</span>
+  </div>
+
+  <div class="po-sm-12 po-pt-3">
+    <span class="po-font-text-bold">Light</span>
+  </div>
+
+  <div class="theme-container po-sm-12">
+    <div *ngFor="let theme of lightsThemes" class="theme po-row" [ngClass]="theme.body" (click)="setSelectedTheme(theme)">
+      <div class="theme-header po-sm-12">
+        <div class="bookmark" [ngClass]="theme.bookMark"></div>
+      </div>
+      <div class="theme-footer" [ngClass]="[theme.footer, theme.border]"></div>
+    </div>
+  </div>
+
+  <div class="po-sm-12 po-pt-3">
+    <span class="po-font-text-bold">Dark</span>
+  </div>
+
+  <div class="theme-container po-sm-12 po-pb-5">
+    <div *ngFor="let theme of darkThemes" class="theme po-row" [ngClass]="theme.body" (click)="setSelectedTheme(theme)">
+      <div class="theme-header po-sm-12">
+        <div class="bookmark" [ngClass]="theme.bookMark"></div>
+      </div>
+      <div class="theme-footer" [ngClass]="[theme.footer, theme.border]"></div>
+    </div>
+  </div>
+
+  <div class="big-board po-row" [ngClass]="backGrondBoard">
+    <div class="po-sm-10 flag-container" [ngClass]="flagStyle">
+      <div class="po-sm-3 po-p-0">
+        <img class="image-3x4 po-p-0 po-sm-2" src="{{ pessoa.imageUrl }}" alt="" />
+      </div>
+      <div class="po-sm-9 po-p-0 text-left po-pl-1 po-pt-1" [ngClass]="{'text-white': isDarkTheme}">
+        <span class="font-name" [ngClass]="{'text-white': isDarkTheme}">{{ pessoa.nome }} |</span>
+        <span class="font-cargo" [ngClass]="{'text-white': isDarkTheme}">{{ pessoa.cargo }}</span>
+      </div>
+      <div class="po-sm-9 po-p-0 text-left po-pl-1" >
+        <span class="font-city" [ngClass]="{'text-white': isDarkTheme}">{{ pessoa.pais }}, {{ pessoa.cidade }}</span>
+      </div>
+    </div>
+  </div>
+  
+
+  <po-button class="po-sm-12 po-pt-1" p-label="Fazer Download" p-kind="primary" (p-click)="fim()"></po-button>
+</po-page-default>

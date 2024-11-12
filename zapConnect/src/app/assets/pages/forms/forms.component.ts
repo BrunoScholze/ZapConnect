@@ -1,7 +1,8 @@
 import { Component, ViewChild, ElementRef } from '@angular/core';
-import { Pessoa } from '../model/pessoa';
+
 import { PoNotificationService } from '@po-ui/ng-components';
 import { Router } from '@angular/router';
+import { Pessoa } from '../../../model/pessoa';
 
 @Component({
   selector: 'app-forms',
@@ -10,7 +11,7 @@ import { Router } from '@angular/router';
 })
 export class FormsComponent {
 
-  pessoa: Pessoa = {
+  pessoa: Pessoa= {
     nome: '',
     empresa: '',
     cargo: '',
@@ -64,7 +65,9 @@ export class FormsComponent {
   }
 
   navigateToWallpaper() {
-    this.router.navigate(['/app-wallpaper'], { queryParams: { pessoa: JSON.stringify(this.pessoa)} });
+   // this.router.navigate(['/app-wallpaper'], { queryParams: { pessoa: JSON.stringify(this.pessoa)} });
+    this.router.navigate(['/app-theme-forms'], { queryParams: { pessoa: JSON.stringify(this.pessoa)} });
+
   }
 
   async openWhatsApp() {
@@ -93,7 +96,6 @@ export class FormsComponent {
   }
 
   changeInput(event: any){
-
     this.pessoa.imagem = event;
     const file = this.pessoa.imagem[0].rawFile;
     this.pessoa.imageUrl = URL.createObjectURL(file);

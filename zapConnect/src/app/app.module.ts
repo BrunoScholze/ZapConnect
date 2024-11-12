@@ -7,7 +7,9 @@ import { PoModule, PoPageModule } from '@po-ui/ng-components';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
-import { FormsComponentModule } from './forms/forms.module';
+import { FormsComponentModule } from './assets/pages/forms/forms.module';
+import { ThemeComponentModule } from './assets/pages/Theme/theme.module';
+
 
 @NgModule({
   declarations: [AppComponent],
@@ -18,6 +20,7 @@ import { FormsComponentModule } from './forms/forms.module';
     HttpClientModule,
     BrowserAnimationsModule,
     FormsComponentModule,
+    ThemeComponentModule,
     FormsModule,
     PoPageModule,
     RouterModule.forRoot([]),

@@ -1,0 +1,393 @@
+.titleFont {
+  font-size: 29px;
+  font-weight: bold;
+  line-height: 35px;
+  font-family: 'Poppins', sans-serif;
+  color: #040404;
+}
+
+.spanFont{
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+  color: #040404;
+  font-weight: 100;
+}
+
+.imageEx{
+  max-width: 120px;
+}
+
+.theme-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+
+.theme {
+  flex-direction: column;
+  width: 18%; /* Ajusta para que caibam 5 elementos em linha */
+  height: 85px;
+  background-color: #e0e0e0; /* Cor de fundo dos quadrados */
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+  border-radius: 8px; /* Bordas arredondadas para um estilo de app */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.theme-footer {
+  margin-top: auto;
+  width: 100%;
+  height: 30%; /* Define a altura do footer */
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.theme-header {
+  top: 0;
+  width: 100%;
+  height: 25px; /* Altura do header */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: visible;
+}
+
+.bookmark {
+  position: relative;
+  bottom: 7px;
+  margin-left: auto;
+  width: 32%;
+  height: 28px;
+  border-radius: 8px;
+}
+
+//------Write---------//
+
+.background-white-theme-card{
+  background-color: #D9D9D9;
+}
+
+.footer-white-theme-card{
+  background-color: #ffffff;
+}
+
+//------Dark---------//
+
+.background-dark-theme-card{
+  background-color: #373737;
+}
+
+.footer-dark-theme-card{
+  background-color: #292929;
+}
+
+//------background---------//
+
+.background-color-red{
+  background-color: #C70707;
+}
+
+.background-color-green{
+  background-color: #098502;
+}
+
+.background-color-blue{
+  background-color: #008FDB;
+}
+
+.background-color-purple{
+  background-color: #7A25A9;
+}
+
+.background-color-white{
+  background-color: #ffffff;
+}
+
+//------background---------//
+
+.border-red{
+  border-top: 1px  solid #C70707;
+}
+
+.border-green{
+  border-top: 1px  solid #098502;
+}
+
+.border-blue{
+  border-top: 1px  solid #008FDB;
+}
+
+.border-purple{
+  border-top: 1px  solid #7A25A9;
+}
+
+.background-dark-theme-card:hover {
+  background-color: #454545; 
+}
+
+.background-white-theme-card:hover {
+  background-color: #cbcbcb; 
+}
+
+.big-board{
+display: flex;
+justify-content: center;
+align-items: center;
+height: 25%;
+border-radius: 10px;
+}
+
+
+.background-light{
+  background-color: #D9D9D9;
+}
+
+.background-dark{
+  background-color: #373737;
+}
+
+
+//---------------APAGAR//
+
+.wallPaper {
+  height: 100vh;
+  background-color: rgb(230, 230, 230);
+}
+
+.flex-center{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.po-pt-big-top{
+  padding-top: 80%;
+}
+
+.image-size {
+  width: 70px;
+  height: auto;
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+.image-3x4 {
+  width: 80px;
+  height: 80px;
+  max-width: 100%;
+  object-fit: cover;
+  display: block;
+  margin: 0 ;
+  border-radius: 5px;
+}
+
+.font-name{
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: rgb(0, 0, 0);
+}
+
+.font-city{
+  font-family: 'Poppins', sans-serif;
+  color: rgb(165, 165, 165);
+}
+
+.font-cargo{
+  font-family: 'Poppins', sans-serif;
+  color: rgb(0, 0, 0);
+}
+
+.text-left {
+  text-align: left;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 13px 0;
+}
+
+.image-size {
+  max-width: 40px;
+}
+
+.qr-code{
+  width: 250px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.flag-container{
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/*---Themes----*/
+
+/*---default----*/
+
+.flag-container-white-default{
+  background-color: white;
+}
+
+.footer-white-default{
+  background-color: white;
+}
+
+.flag-container-dark-default{
+  background-color: #292929;
+}
+
+.footer-dark-default{
+  background-color: #292929;
+}
+
+/*---Red----*/
+
+.flag-container-white-red{
+  background-color: white;
+  border: 1px solid #C70707;
+}
+
+.footer-white-red{
+  background-color: white;
+  border-top: 1px solid #C70707;
+}
+
+.flag-container-dark-red{
+  background-color: #292929;
+  border: 1px solid #C70707;
+}
+
+.footer-dark-red{
+  background-color: #292929;
+  border-top: 1px solid #C70707;
+}
+
+/*---Green----*/
+
+.flag-container-white-green{
+  background-color: white;
+  border: 1px solid #098502;
+}
+
+.footer-white-green{
+  background-color: white;
+  border-top: 1px solid #098502;
+}
+
+.flag-container-dark-green{
+  background-color: #292929;
+  border: 1px solid #098502;
+}
+
+.footer-dark-green{
+  background-color: #292929;
+  border-top: 1px solid #098502;
+}
+
+/*---Bluee----*/
+
+.flag-container-white-blue{
+  background-color: white;
+  border: 1px solid #008FDB;
+}
+
+.footer-white-blue{
+  background-color: white;
+  border-top: 1px solid #008FDB;
+}
+
+.flag-container-dark-blue{
+  background-color: #292929;
+  border: 1px solid #008FDB;
+}
+
+.footer-dark-blue{
+  background-color: #292929;
+  border-top: 1px solid #008FDB;
+}
+
+/*---Purple----*/
+
+.flag-container-white-purple{
+  background-color: white;
+  border: 1px solid #7A25A9;
+}
+
+.footer-white-purple{
+  background-color: white;
+  border-top: 1px solid #7A25A9;
+}
+
+.flag-container-dark-purple{
+  background-color: #292929;
+  border: 1px solid #7A25A9;
+}
+
+.footer-dark-purple{
+  background-color: #292929;
+  border-top: 1px solid #7A25A9;
+}
+
+/* ----Fonts------*/
+
+.color-white{
+  color: white;
+}
+
+.color-black{
+  color: rgb(0, 0, 0);
+}
+
+.color-grey{
+  color: #BBBBBB;
+}
+
+.color-red{
+  color: #DB3E3E;
+}
+
+.color-green{
+  color: #23B11B;
+}
+
+.color-blue{
+  color: #008FDB;
+}
+
+.color-purple{
+  color: #9B30D6;
+}
+
+.color-light-grey{
+  color: #A6A6A6;
+}
+
+.text-white {
+  color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+
+

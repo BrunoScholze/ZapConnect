@@ -1,5 +1,5 @@
 import { Component, Input, ViewEncapsulation } from '@angular/core';
-import { Pessoa } from '../model/pessoa';
+import { Pessoa } from '../../../model/pessoa';
 import { ActivatedRoute } from '@angular/router';
 import * as QRCode from 'qrcode';
 import html2canvas from 'html2canvas';
@@ -15,19 +15,6 @@ export class WallpaperComponent {
   qrCodeDataUrl: string | undefined;
   logoUrl: string = '';
 
-  /*pessoa: Pessoa = {
-    nome: 'Bruno Scholze',
-    empresa: 'Totvs',
-    cargo: 'Analsita de desenvolvimento',
-    numero: '556789773585',
-    cidade: 'Joinville',
-    pais: 'Brasil',
-    imagem: [],
-    idd: '55',
-    whatsappLink: "https://wa.me/556789773585",
-    imageUrl: "blob:http://localhost:4200/15d1c13e-9bb2-48eb-9ae3-088512c5f59b"
-  };*/
-
   constructor(private route: ActivatedRoute) {
 
    }
@@ -39,6 +26,7 @@ export class WallpaperComponent {
 
       }
     });
+    
     this.genereateLogo();
     this.generateQrCode();
 
@@ -71,7 +59,8 @@ export class WallpaperComponent {
   }
 
   genereateLogo(): void {
-    const url = 'https://logo.clearbit.com/neogrid.com';
+    const url = `https://logo.clearbit.com/${this.pessoa.empresa}.com`;
+
     this.logoUrl = url;
   }
 
